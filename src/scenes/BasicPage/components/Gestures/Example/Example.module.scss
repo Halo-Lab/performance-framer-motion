@@ -1,0 +1,48 @@
+$gradient: linear-gradient(
+  to right,
+  #eea2a2 0%,
+  #bbc1bf 19%,
+  #57c6e1 42%,
+  #b49fda 79%,
+  #7ac5d8 100%
+);
+
+.interactive {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  min-height: 20rem;
+  padding: 0 1rem;
+  background: $gradient;
+  background-position: center;
+  background-size: 115%;
+}
+
+.code {
+  width: 35%;
+}
+
+.motion {
+  position: relative;
+  font-size: 10rem;
+  cursor: pointer;
+  user-select: none;
+
+  &__stars {
+    position: absolute;
+    top: -0.35rem;
+    left: -1rem;
+    font-size: 4rem;
+    opacity: 0;
+    scale: 0;
+  }
+}
+
+.control {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+  padding: 1rem 0 0 0;
+}

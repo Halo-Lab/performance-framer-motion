@@ -1,0 +1,32 @@
+$gradient: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+.interactive {
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background: $gradient;
+}
+
+.code {
+  width: 40%;
+}
+
+.motion {
+  position: absolute;
+  text-align: center;
+  cursor: grab;
+  user-select: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &__emoji {
+    font-size: 6rem;
+  }
+}
+
+.control {
+  margin: auto 0 0 0;
+  padding: 1rem 0 0 0;
+}

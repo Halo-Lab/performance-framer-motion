@@ -1,0 +1,38 @@
+@use '/src/styles/variables/colors' as *;
+
+$gradient: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+
+.interactive {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  min-height: 25rem;
+  padding: 1rem;
+  background: $gradient;
+  cursor: pointer;
+}
+
+.code {
+  width: 40%;
+}
+
+.motion {
+  width: 40%;
+  font-size: 6rem;
+  text-align: center;
+  border-radius: 0.85rem;
+  user-select: none;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  color: $color__white;
+  border-radius: 0.85rem;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}

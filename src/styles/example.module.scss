@@ -1,0 +1,77 @@
+@use './variables/colors' as *;
+@use '/src/styles/variables/breakpoints' as *;
+
+.example {
+  position: relative;
+  display: flex;
+  height: max-content;
+  color: $color__white;
+  border-radius: 1rem;
+
+  &__interactive {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  &__code {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: $color__black;
+    border-radius: 0 1rem 1rem 0;
+
+    pre {
+      margin: 0 !important;
+      padding: 0 !important;
+      background: $color__black !important;
+
+      * {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    margin: 1.55rem 0;
+    border-bottom: 1px solid rgba($color: $color__white, $alpha: 0.2);
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.input {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  font-weight: 300;
+
+  &__p {
+    width: max-content;
+    min-width: 20%;
+  }
+}
+
+@media (max-width: $max-width--mobile) {
+  .example {
+    flex-direction: column;
+
+    &__interactive {
+      width: 100% !important;
+      min-height: 17.5rem !important;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    &__code {
+      width: 100% !important;
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+}

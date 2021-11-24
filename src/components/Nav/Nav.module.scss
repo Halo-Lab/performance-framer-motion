@@ -1,0 +1,22 @@
+@use '/src/styles/variables/breakpoints' as *;
+
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: $max-width--mobile) {
+  .container {
+    gap: 0;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+}

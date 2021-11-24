@@ -1,0 +1,40 @@
+@use '/src/styles/variables/colors' as *;
+
+$gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
+.interactive {
+  justify-content: center;
+  width: 60%;
+  min-height: 25rem;
+  background: $gradient;
+  cursor: pointer;
+}
+
+.code {
+  width: 40%;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  color: $color__white;
+  border-radius: 0.85rem;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.motion {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  width: 70%;
+  height: max-content;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  background: $color__black;
+  border-radius: 0 0 1rem 1rem;
+  user-select: none;
+}

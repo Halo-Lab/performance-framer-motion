@@ -1,0 +1,66 @@
+@use '/src/styles/variables/colors' as *;
+@use '/src/styles/variables/breakpoints' as *;
+
+$gradient: linear-gradient(-225deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);
+$background--motion: #252525;
+
+.interactive {
+  justify-content: flex-start;
+  width: 55%;
+  min-height: 25rem;
+  padding: 1rem;
+  background: $gradient;
+  cursor: pointer;
+}
+
+.code {
+  width: 45%;
+}
+
+.motion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  background: $background--motion;
+  border-radius: 1rem 0 0 1rem;
+  cursor: pointer;
+  user-select: none;
+
+  &__head {
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+    background: $color__black;
+    border-radius: 0.85rem;
+    user-select: none;
+  }
+
+  &__head-text {
+    width: max-content;
+  }
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  color: $color__white;
+  border-radius: 0.85rem;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+@media (max-width: $max-width--mobile) {
+  .motion {
+    border-radius: 1rem 1rem 0 0;
+  }
+}

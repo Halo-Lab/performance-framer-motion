@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.emoji {
+  z-index: -1;
+  font-size: 6rem;
+  user-select: none;
+  pointer-events: none;
+
+  &--first {
+    transform: rotate(-20deg) scale(1.25) translateX(-4.5rem);
+    opacity: 0.25;
+  }
+
+  &--second {
+    transform: rotate(45deg) scale(0.85) translateY(-3rem);
+    opacity: 0.2;
+  }
+
+  &--third {
+    transform: rotate(-5deg) scale(1.5) translateY(2rem);
+    opacity: 0.35;
+  }
+
+  &--fourth {
+    transform: rotate(5deg) scale(0.75) translateY(-5rem);
+    opacity: 0.1;
+  }
+
+  &--fifth {
+    transform: rotate(-5deg) scale(1.75) translateX(2rem) translateY(6rem);
+    opacity: 0.4;
+  }
+}

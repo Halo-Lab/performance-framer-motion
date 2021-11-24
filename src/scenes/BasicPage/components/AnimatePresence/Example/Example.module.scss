@@ -1,0 +1,30 @@
+$gradient: linear-gradient(
+  to top,
+  #0c3483 0%,
+  #a2b6df 100%,
+  #6b8cce 100%,
+  #a2b6df 100%
+);
+
+.interactive {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  background: $gradient;
+}
+
+.code {
+  width: 45%;
+}
+
+.motion {
+  font-size: 6rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.control {
+  margin: auto 0 0 0;
+  padding: 1rem 0 0 0;
+}

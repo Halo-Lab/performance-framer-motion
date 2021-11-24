@@ -1,0 +1,20 @@
+$gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+.interactive {
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
+  min-height: 25rem;
+  padding: 2rem 2rem 2rem 2rem;
+  font-size: 6rem;
+  background: $gradient;
+}
+
+.code {
+  width: 40%;
+}
+
+.motion {
+  height: min-content;
+  font-size: 4rem;
+}

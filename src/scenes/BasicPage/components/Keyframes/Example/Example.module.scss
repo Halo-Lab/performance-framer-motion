@@ -1,0 +1,40 @@
+$gradient: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+.interactive {
+  align-items: center;
+  justify-content: flex-end;
+  width: 65%;
+  padding: 0 1rem;
+  background: $gradient;
+}
+
+.code {
+  width: 35%;
+}
+
+.motion {
+  font-size: 6rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin: 0 0 1rem 0;
+}
+
+.input {
+  width: 5rem;
+  font-weight: 300;
+  transform: rotate(90deg);
+}
+
+.control {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+  padding: 1rem 0 0 0;
+}

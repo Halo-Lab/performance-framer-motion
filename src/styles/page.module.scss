@@ -1,0 +1,57 @@
+@use '/src/styles/variables/colors' as *;
+@use '/src/styles/variables/breakpoints' as *;
+
+$duration: 0.35s;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 4rem 4rem 4rem;
+  overflow: hidden;
+
+  &--lab {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.md {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+
+  &__button {
+    color: $color__white;
+    font-size: inherit;
+    background: $color__black;
+  }
+
+  &__code {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
+.callout {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  background: $color__yellow;
+  border-radius: 0.35rem;
+
+  &__emoji {
+    margin: 0 1rem 0 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: $max-width--mobile) {
+  .container {
+    padding: 0 1rem 1rem 1rem;
+  }
+}

@@ -1,0 +1,25 @@
+$gradient: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+.interactive {
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background: $gradient;
+}
+
+.code {
+  width: 40%;
+}
+
+.motion {
+  font-size: 5rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.control {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: auto 0 0 0;
+}
