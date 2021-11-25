@@ -72,6 +72,8 @@ $yellow: #ffd651;
   font-size: 3.25rem;
   background: $yellow;
   border-radius: 50%;
+  user-select: none;
+  pointer-events: none;
 }
 
 .count {
