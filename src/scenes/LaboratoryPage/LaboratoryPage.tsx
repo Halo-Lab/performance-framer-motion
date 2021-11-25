@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import { Footer } from 'components/Footer';
 import { Nav } from 'components/Nav';
 import stylesPage from 'styles/page.module.scss';
 
@@ -18,6 +19,7 @@ const LaboratoryPage: React.FC = () => (
       <LockedCard />
       <Cart />
     </main>
+    <Footer />
   </>
 );
 
