@@ -2,6 +2,7 @@ import cn from 'classnames';
 import { Nav } from 'components/Nav';
 import stylesPage from 'styles/page.module.scss';
 
+import { Cart } from './components/Cart';
 import { LockedCard } from './components/LockedCard';
 import { Pip } from './components/Pip';
 
@@ -15,6 +16,7 @@ const LaboratoryPage: React.FC = () => (
       </div>
       <Pip />
       <LockedCard />
+      <Cart />
     </main>
   </>
 );

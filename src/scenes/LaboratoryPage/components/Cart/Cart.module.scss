@@ -1,0 +1,91 @@
+@use '/src/styles/variables/colors' as *;
+
+$background: #f0f0f0;
+$yellow: #ffd651;
+
+.container {
+  position: relative;
+  width: 32rem;
+  max-width: 100%;
+  height: 25rem;
+  padding: 2rem;
+  overflow: hidden;
+  background: $background;
+  border-radius: 0.85rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10rem;
+  height: 10rem;
+  padding: 0.5rem;
+  color: $color__white;
+  background: $color__white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &__emoji {
+    font-size: 4.25rem;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-size: 2rem;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &--tomato {
+    background: #e78679;
+  }
+  &--apple {
+    background: #9dd847;
+  }
+  &--orange {
+    background: #f5ac4d;
+  }
+  &--grape {
+    background: #cc6a95;
+  }
+}
+
+.cart {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  font-size: 3.25rem;
+  background: $yellow;
+  border-radius: 50%;
+}
+
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: $color__white;
+  font-size: 1.75rem;
+  background: $color__black;
+  border-radius: 50%;
+}
