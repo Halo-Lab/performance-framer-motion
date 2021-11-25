@@ -44,6 +44,7 @@ $color--locked: #debcf7;
     width: 0%;
     height: 0%;
     overflow: hidden;
+    background: $color--locked;
     border-radius: 50%;
     pointer-events: none;
   }
