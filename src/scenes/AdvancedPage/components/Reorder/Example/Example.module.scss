@@ -1,7 +1,7 @@
 @use '/src/styles/variables/breakpoints' as *;
 @use '/src/styles/variables/colors' as *;
 
-$gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+$gradient: linear-gradient(to top, #dbced1 0%, #d5dfee 99%, #d5dfee 100%);
 $duration: 0.35s;
 
 @mixin flag($background) {
@@ -12,7 +12,7 @@ $duration: 0.35s;
   height: 100%;
   background: $background;
   border-radius: 1rem;
-  opacity: 0.85;
+  opacity: 0.8;
   content: '';
 }
 
