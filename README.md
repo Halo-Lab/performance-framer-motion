@@ -1,7 +1,6 @@
 # Description
 Example of usage of framer motion library
-
-[Application link](https://performance-framer-motion.vercel.app/ 'Link to preview')
+[Link](https://performance-framer-motion.vercel.app/ 'Link to preview')
 
 ## Word from author
 
